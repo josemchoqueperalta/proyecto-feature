@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto </title>
+
+<style>
+  input:  valid, textarea: valid{
+        background: green;
+    }
+
+    input: invalid, textarea: invalid{
+        background:red;
+    }
+
+
+  input[type="text"], 
+  input[type="email"],
+  textarea {
+      padding: 10px;
+      width: 300px;
+      transition: all 0.5 s;
+      border: 1px solid #cdcdcd
+  }
+
+
+  
+</style>
+
 </head>
 <body>
+
+
     <main>
          <!--prunera seccion -->
        <section> 
@@ -146,6 +172,26 @@
 
 
      </section>
+
+    <section>
+        <h2>Contacto</h2> 
+               <form action="">
+                
+                <input type="text" required placeholder="Nombre">
+                <input type="text" required placeholder="Apellido">
+                <br>
+                <br>
+                 <input type="email" required name="" id="" placeholder="Email">
+                 <input type="text" required placeholder="Telefono">
+                 <br>
+                 <br>
+                 <textarea name="" id="" cols="30" rows="10" placeholder="Descripcion" ></textarea>
+                 <br>
+                 <br>
+                 <button> Enviar</button>
+                 
+            </form>
+    </section>
 
 
     </main>
